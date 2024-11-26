@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<style>
+    .back-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+</style>   
+
+<body>
+
+     <!-- Navigation Bar -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-clinic-medical"></i> Clinic Management
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Registration Form Section -->
+    <section id="registration" class="container py-5">
+        <h2 class="text-center mb-4">Client Registration</h2>
+        <form id="clientForm" class="w-50 mx-auto">
+            <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" id="name" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" id="phone" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-success">Register</button>
+        </form>
+
+        <div id="clientIdSection" class="mt-4">
+            <h4 class="text-center mb-4">Your Client ID: <span id="clientId">Not Generated</span></h4>
+        </div>
+    </section>
+    
+    <button class="btn btn-primary back-btn" onclick="goBack()">
+        <i class="fas fa-arrow-left"></i> Back
+    </button>
+
+     <!-- Footer -->
+     <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Clinic Management System | Designed by Hoor Spogmay</p>
+        <p>
+            <a href="#" class="text-white me-2"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white me-2"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .dashboard-header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .dashboard-header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            background-color: #343a40;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #23272b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Dashboard Header -->
+    <header class="dashboard-header text-center">
+        <h1>Admin Dashboard</h1>
+        <p>Manage clinic operations efficiently</p>
+    </header>
+
+    <!-- Dashboard Content -->
+    <div class="container mt-4">
+        <div class="row g-4">
+            <!-- Payment Tracking -->
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Payment Tracking</h5>
+                        <p class="card-text">Manage payments and generate bills.</p>
+                        <a href="payment_tracking.html" class="btn btn-primary">Track Payments</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Session Management -->
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Session Management</h5>
+                        <p class="card-text">Assign and manage client sessions.</p>
+                        <a href="session_management.html" class="btn btn-primary">Manage Sessions</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Client Data -->
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Client Data</h5>
+                        <p class="card-text">Access and update client records.</p>
+                        <a href="client_data.html" class="btn btn-primary">Manage Clients</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Reports -->
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Reports</h5>
+                        <p class="card-text">Generate performance and revenue reports.</p>
+                        <a href="reports.html" class="btn btn-primary">View Reports</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4 mt-4">
+            <!-- Notifications -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Notifications</h5>
+                        <p class="card-text">Send reminders to clients and doctors.</p>
+                        <a href="notifications.html" class="btn btn-primary">Send Notifications</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Inventory Management -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Inventory Management</h5>
+                        <p class="card-text">Track and manage medicines in stock.</p>
+                        <a href="inventory.html" class="btn btn-primary">Manage Inventory</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Logout -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Logout</h5>
+                        <p class="card-text">Exit the admin portal securely.</p>
+                        <a href="index.html" class="btn btn-primary">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-4">
+        <p>&copy; 2024 Clinic Management System. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
